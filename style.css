@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#lightbulb{
+    scale: 0.5;
+    transform-origin: top;
+}
+
+area:hover{
+    cursor: pointer;
+}
+
+.lightbulb-animation{
+ animation: lightbulb-animation 1s linear infinite;
+}
+
+@keyframes lightbulb-animation{
+0%{
+    content: url(./img/light-on-66.png);
+}
+20%{
+    content: url(./img/light-on-33.png);
+}
+40%{
+    content: url(./img/light-on.png);
+}
+60%{
+    content: url(./img/light-on-33.png);
+}
+80%{
+    content: url(./img/light-on-66.png);
+}
+100%{
+    content: url(./img/light-on-100.png);
+}
+}
