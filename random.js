@@ -11,6 +11,7 @@ var images = [
       // create a new image element
       var img = new Image();
       img.src = images[i];
+      img.style.display = "none";
   
       // add the image element to the document
       document.body.appendChild(img);
