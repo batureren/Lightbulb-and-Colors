@@ -16,7 +16,7 @@ body{
     justify-content: center;
 }
 
-area:hover{
+area:hover, button:hover{
     cursor: pointer;
 }
 
@@ -77,18 +77,10 @@ button{
     color: #ffffff;
 }
 
-button:hover{
-    cursor: pointer;
-}
-
 .no-click{
     pointer-events: none;
 }
 
-i{
-    color: red;
-}
-
-b{
+i, b{
     color: red;
 }

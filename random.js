@@ -6,14 +6,13 @@ var images = [
     "./img/light-on-100.png"
   ];
   
-  // loop through the images array
   for (var i = 0; i < images.length; i++) {
-      // create a new image element
+//! creates a new image element
       var img = new Image();
       img.src = images[i];
-      img.style.display = "none";
+      img.style.display = "none"; //! hide
   
-      // add the image element to the document
+//! add the image element to the document
       document.body.appendChild(img);
   }
 
@@ -48,7 +47,7 @@ area.addEventListener("click", function() {
     }
   }
 
-  //!
+  //! My loops
   function text_change(){
     if (dialogue == 2) {
     $("#text-change").html(`Huh? What just happened there? Don't tell me... Are you enjoying staying in the dark?`);
@@ -76,7 +75,7 @@ area.addEventListener("click", function() {
     $("button").removeClass("colorchange")
   }
   if (dialogue == 9) {
-    $("#text-change").html(`Haha! You are such a jester! You don't mean that. Of course you don't mean it. Please, this is my last warning to you.`);
+    $("#text-change").html(`Haha! You are such a jester! You didn't mean that. Of course you didn't. Please, this is my last warning to you.`);
   }
   if (dialogue == 10) {
     $("#text-change").html(`Not funny. I gave you a warning but you didn't listen... not a bit! Good luck turning <b>"off"</b> the button. <i>THIS LIGHT WILL BURN FOR ETERNITY! ENJOY WHILE YOU CAN.</i>`);
