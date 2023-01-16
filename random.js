@@ -16,6 +16,11 @@ var images = [
       document.body.appendChild(img);
   }
 
+//! Disable right click
+    document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+    }, false);
+
 //! Lightbulb area animation
 let area = document.querySelector("area")
 let lightbulb = document.getElementById("lightbulb")
